@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="nl3-Dd-23C">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--Player View Controller-->
+        <scene sceneID="tOp-E6-new">
+            <objects>
+                <viewController id="nl3-Dd-23C" customClass="PlayerViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cK6-aP-dN5"/>
+                        <viewControllerLayoutGuide type="bottom" id="a4h-vk-bOw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Qje-KF-m8x">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SBa-Jg-rfs" customClass="ZFPlayerView">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="180"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="SBa-Jg-rfs" secondAttribute="height" multiplier="16:9" id="bj7-JK-ez5"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="SBa-Jg-rfs" secondAttribute="trailing" id="FMA-Nr-9J9"/>
+                            <constraint firstItem="SBa-Jg-rfs" firstAttribute="leading" secondItem="Qje-KF-m8x" secondAttribute="leading" id="gsj-Oe-tlz"/>
+                            <constraint firstItem="SBa-Jg-rfs" firstAttribute="top" secondItem="Qje-KF-m8x" secondAttribute="top" id="hN4-mU-7Ir"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Ojq-8h-8HL"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="playerView" destination="SBa-Jg-rfs" id="vlt-nO-hab"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yux-f4-e8o" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="534" y="112"/>
+        </scene>
+    </scenes>
+</document>

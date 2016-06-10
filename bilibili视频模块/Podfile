@@ -1,0 +1,18 @@
+# Uncomment this line to define a global platform for your project
+# platform :ios, '8.0'
+# Uncomment this line if you're using Swift
+# use_frameworks!
+
+target 'bilibili视频模块' do
+pod ‘MJExtension’
+pod ‘AFNetworking’
+pod ‘SDWebImage’
+pod ‘Masonry’
+pod ‘MBProgressHUD’
+pod ‘MJRefresh’
+end
+
+target 'bilibili视频模块UITests' do
+
+end
+

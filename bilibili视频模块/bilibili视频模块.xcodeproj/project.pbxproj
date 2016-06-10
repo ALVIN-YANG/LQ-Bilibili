@@ -1,0 +1,849 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		39D7C1F81D0663DF0086622C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 39D7C1F71D0663DF0086622C /* main.m */; };
+		39D7C2011D0663DF0086622C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39D7C1FF1D0663DF0086622C /* Main.storyboard */; };
+		39D7C2031D0663DF0086622C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39D7C2021D0663DF0086622C /* Assets.xcassets */; };
+		39D7C2061D0663DF0086622C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39D7C2041D0663DF0086622C /* LaunchScreen.storyboard */; };
+		39D7C2111D0663DF0086622C /* bilibili____UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 39D7C2101D0663DF0086622C /* bilibili____UITests.m */; };
+		39D7C3381D0708A00086622C /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39D7C2DA1D0708A00086622C /* HomeViewController.m */; };
+		39D7C3391D0708A00086622C /* LQTitleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 39D7C2DD1D0708A00086622C /* LQTitleButton.m */; };
+		39D7C33A1D0708A00086622C /* FanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39D7C2E11D0708A00086622C /* FanViewController.m */; };
+		39D7C33B1D0708A00086622C /* DanceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39D7C2E71D0708A00086622C /* DanceViewController.m */; };
+		39D7C33C1D0708A00086622C /* MusicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39D7C2ED1D0708A00086622C /* MusicViewController.m */; };
+		39D7C33D1D0708A00086622C /* LaunchScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 39D7C2F61D0708A00086622C /* LaunchScreen.m */; };
+		39D7C33E1D0708A00086622C /* StrokeUILabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 39D7C2F81D0708A00086622C /* StrokeUILabel.m */; };
+		39D7C33F1D0708A00086622C /* YLQRefreshFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 39D7C2FA1D0708A00086622C /* YLQRefreshFooter.m */; };
+		39D7C3401D0708A00086622C /* YLQRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 39D7C2FC1D0708A00086622C /* YLQRefreshHeader.m */; };
+		39D7C3411D0708A00086622C /* LQAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 39D7C2FE1D0708A00086622C /* LQAppDelegate.m */; };
+		39D7C3421D0708A00086622C /* LQTabbarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39D7C3041D0708A00086622C /* LQTabbarController.m */; };
+		39D7C3431D0708A00086622C /* YLQTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 39D7C3061D0708A00086622C /* YLQTabBar.m */; };
+		39D7C3561D070A910086622C /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 39D7C3551D070A910086622C /* UIView+Frame.m */; };
+		39D7C4B41D0AC7180086622C /* PlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39D7C4A31D0AC7180086622C /* PlayerViewController.m */; };
+		39D7C4B51D0AC7180086622C /* ZFBrightnessView.m in Sources */ = {isa = PBXBuildFile; fileRef = 39D7C4A81D0AC7180086622C /* ZFBrightnessView.m */; };
+		39D7C4B61D0AC7180086622C /* ZFPlayer.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 39D7C4A91D0AC7180086622C /* ZFPlayer.bundle */; };
+		39D7C4B71D0AC7180086622C /* ZFPlayerControlView.m in Sources */ = {isa = PBXBuildFile; fileRef = 39D7C4AC1D0AC7180086622C /* ZFPlayerControlView.m */; };
+		39D7C4B81D0AC7180086622C /* ZFDownloadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 39D7C4AF1D0AC7180086622C /* ZFDownloadManager.m */; };
+		39D7C4B91D0AC7180086622C /* ZFSessionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 39D7C4B11D0AC7180086622C /* ZFSessionModel.m */; };
+		39D7C4BA1D0AC7180086622C /* ZFPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 39D7C4B31D0AC7180086622C /* ZFPlayerView.m */; };
+		39D7C4BD1D0AC75E0086622C /* LQNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39D7C4BC1D0AC75E0086622C /* LQNavigationController.m */; };
+		39D7C4C71D0B2C160086622C /* PlayerViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39D7C4C61D0B2C160086622C /* PlayerViewController.storyboard */; };
+		C708A077733B62D77078E67A /* libPods-bilibili视频模块.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AF1D2C361259D7CFB99A8FCE /* libPods-bilibili视频模块.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		39D7C20D1D0663DF0086622C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 39D7C1EB1D0663DF0086622C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 39D7C1F21D0663DF0086622C;
+			remoteInfo = "bilibili视频模块";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		39D7C1F31D0663DF0086622C /* bilibili视频模块.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "bilibili视频模块.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		39D7C1F71D0663DF0086622C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		39D7C2001D0663DF0086622C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		39D7C2021D0663DF0086622C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		39D7C2051D0663DF0086622C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		39D7C2071D0663DF0086622C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		39D7C20C1D0663DF0086622C /* bilibili视频模块UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "bilibili视频模块UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		39D7C2101D0663DF0086622C /* bilibili____UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "bilibili____UITests.m"; sourceTree = "<group>"; };
+		39D7C2121D0663DF0086622C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		39D7C2D91D0708A00086622C /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		39D7C2DA1D0708A00086622C /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		39D7C2DC1D0708A00086622C /* LQTitleButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQTitleButton.h; sourceTree = "<group>"; };
+		39D7C2DD1D0708A00086622C /* LQTitleButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQTitleButton.m; sourceTree = "<group>"; };
+		39D7C2E01D0708A00086622C /* FanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FanViewController.h; sourceTree = "<group>"; };
+		39D7C2E11D0708A00086622C /* FanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FanViewController.m; sourceTree = "<group>"; };
+		39D7C2E61D0708A00086622C /* DanceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DanceViewController.h; sourceTree = "<group>"; };
+		39D7C2E71D0708A00086622C /* DanceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DanceViewController.m; sourceTree = "<group>"; };
+		39D7C2EC1D0708A00086622C /* MusicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicViewController.h; sourceTree = "<group>"; };
+		39D7C2ED1D0708A00086622C /* MusicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicViewController.m; sourceTree = "<group>"; };
+		39D7C2F51D0708A00086622C /* LaunchScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LaunchScreen.h; sourceTree = "<group>"; };
+		39D7C2F61D0708A00086622C /* LaunchScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LaunchScreen.m; sourceTree = "<group>"; };
+		39D7C2F71D0708A00086622C /* StrokeUILabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StrokeUILabel.h; sourceTree = "<group>"; };
+		39D7C2F81D0708A00086622C /* StrokeUILabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StrokeUILabel.m; sourceTree = "<group>"; };
+		39D7C2F91D0708A00086622C /* YLQRefreshFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLQRefreshFooter.h; sourceTree = "<group>"; };
+		39D7C2FA1D0708A00086622C /* YLQRefreshFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLQRefreshFooter.m; sourceTree = "<group>"; };
+		39D7C2FB1D0708A00086622C /* YLQRefreshHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLQRefreshHeader.h; sourceTree = "<group>"; };
+		39D7C2FC1D0708A00086622C /* YLQRefreshHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLQRefreshHeader.m; sourceTree = "<group>"; };
+		39D7C2FD1D0708A00086622C /* LQAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQAppDelegate.h; sourceTree = "<group>"; };
+		39D7C2FE1D0708A00086622C /* LQAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQAppDelegate.m; sourceTree = "<group>"; };
+		39D7C3011D0708A00086622C /* LQMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQMacro.h; sourceTree = "<group>"; };
+		39D7C3031D0708A00086622C /* LQTabbarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQTabbarController.h; sourceTree = "<group>"; };
+		39D7C3041D0708A00086622C /* LQTabbarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQTabbarController.m; sourceTree = "<group>"; };
+		39D7C3051D0708A00086622C /* YLQTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLQTabBar.h; sourceTree = "<group>"; };
+		39D7C3061D0708A00086622C /* YLQTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLQTabBar.m; sourceTree = "<group>"; };
+		39D7C3541D070A910086622C /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
+		39D7C3551D070A910086622C /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		39D7C4A21D0AC7180086622C /* PlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerViewController.h; sourceTree = "<group>"; };
+		39D7C4A31D0AC7180086622C /* PlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerViewController.m; sourceTree = "<group>"; };
+		39D7C4A71D0AC7180086622C /* ZFBrightnessView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFBrightnessView.h; sourceTree = "<group>"; };
+		39D7C4A81D0AC7180086622C /* ZFBrightnessView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFBrightnessView.m; sourceTree = "<group>"; };
+		39D7C4A91D0AC7180086622C /* ZFPlayer.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ZFPlayer.bundle; sourceTree = "<group>"; };
+		39D7C4AA1D0AC7180086622C /* ZFPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFPlayer.h; sourceTree = "<group>"; };
+		39D7C4AB1D0AC7180086622C /* ZFPlayerControlView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFPlayerControlView.h; sourceTree = "<group>"; };
+		39D7C4AC1D0AC7180086622C /* ZFPlayerControlView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFPlayerControlView.m; sourceTree = "<group>"; };
+		39D7C4AE1D0AC7180086622C /* ZFDownloadManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFDownloadManager.h; sourceTree = "<group>"; };
+		39D7C4AF1D0AC7180086622C /* ZFDownloadManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFDownloadManager.m; sourceTree = "<group>"; };
+		39D7C4B01D0AC7180086622C /* ZFSessionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFSessionModel.h; sourceTree = "<group>"; };
+		39D7C4B11D0AC7180086622C /* ZFSessionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFSessionModel.m; sourceTree = "<group>"; };
+		39D7C4B21D0AC7180086622C /* ZFPlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFPlayerView.h; sourceTree = "<group>"; };
+		39D7C4B31D0AC7180086622C /* ZFPlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFPlayerView.m; sourceTree = "<group>"; };
+		39D7C4BB1D0AC75E0086622C /* LQNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQNavigationController.h; sourceTree = "<group>"; };
+		39D7C4BC1D0AC75E0086622C /* LQNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQNavigationController.m; sourceTree = "<group>"; };
+		39D7C4C61D0B2C160086622C /* PlayerViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PlayerViewController.storyboard; sourceTree = "<group>"; };
+		AF1D2C361259D7CFB99A8FCE /* libPods-bilibili视频模块.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-bilibili视频模块.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1BC60BE8F3A363A285AA6D6 /* Pods-bilibili视频模块.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bilibili视频模块.release.xcconfig"; path = "Pods/Target Support Files/Pods-bilibili视频模块/Pods-bilibili视频模块.release.xcconfig"; sourceTree = "<group>"; };
+		F89BB7D5C048E5C9497C3A67 /* Pods-bilibili视频模块.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bilibili视频模块.debug.xcconfig"; path = "Pods/Target Support Files/Pods-bilibili视频模块/Pods-bilibili视频模块.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		39D7C1F01D0663DF0086622C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C708A077733B62D77078E67A /* libPods-bilibili视频模块.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39D7C2091D0663DF0086622C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		39D7C1EA1D0663DF0086622C = {
+			isa = PBXGroup;
+			children = (
+				39D7C1F51D0663DF0086622C /* bilibili视频模块 */,
+				39D7C20F1D0663DF0086622C /* bilibili视频模块UITests */,
+				39D7C1F41D0663DF0086622C /* Products */,
+				FF89799C80A54A9E06C163C0 /* Pods */,
+				56354FEAE046AFDAE9D60930 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		39D7C1F41D0663DF0086622C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				39D7C1F31D0663DF0086622C /* bilibili视频模块.app */,
+				39D7C20C1D0663DF0086622C /* bilibili视频模块UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		39D7C1F51D0663DF0086622C /* bilibili视频模块 */ = {
+			isa = PBXGroup;
+			children = (
+				39D7C2B31D0708A00086622C /* Classes */,
+				39D7C1FF1D0663DF0086622C /* Main.storyboard */,
+				39D7C2021D0663DF0086622C /* Assets.xcassets */,
+				39D7C2041D0663DF0086622C /* LaunchScreen.storyboard */,
+				39D7C2071D0663DF0086622C /* Info.plist */,
+				39D7C1F61D0663DF0086622C /* Supporting Files */,
+			);
+			path = "bilibili视频模块";
+			sourceTree = "<group>";
+		};
+		39D7C1F61D0663DF0086622C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				39D7C1F71D0663DF0086622C /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		39D7C20F1D0663DF0086622C /* bilibili视频模块UITests */ = {
+			isa = PBXGroup;
+			children = (
+				39D7C2101D0663DF0086622C /* bilibili____UITests.m */,
+				39D7C2121D0663DF0086622C /* Info.plist */,
+			);
+			path = "bilibili视频模块UITests";
+			sourceTree = "<group>";
+		};
+		39D7C2B31D0708A00086622C /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				39D7C4A01D0AC7180086622C /* Video(视频) */,
+				39D7C2D71D0708A00086622C /* Home(首页) */,
+				39D7C2F21D0708A00086622C /* Others */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		39D7C2D71D0708A00086622C /* Home(首页) */ = {
+			isa = PBXGroup;
+			children = (
+				39D7C2D81D0708A00086622C /* Controller */,
+				39D7C2F01D0708A00086622C /* Model */,
+				39D7C2F11D0708A00086622C /* View */,
+			);
+			path = "Home(首页)";
+			sourceTree = "<group>";
+		};
+		39D7C2D81D0708A00086622C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				39D7C2D91D0708A00086622C /* HomeViewController.h */,
+				39D7C2DA1D0708A00086622C /* HomeViewController.m */,
+				39D7C2DB1D0708A00086622C /* LQNavi(首页导航) */,
+				39D7C2DE1D0708A00086622C /* 番剧 */,
+				39D7C2E41D0708A00086622C /* 舞蹈 */,
+				39D7C2EA1D0708A00086622C /* 音乐 */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		39D7C2DB1D0708A00086622C /* LQNavi(首页导航) */ = {
+			isa = PBXGroup;
+			children = (
+				39D7C2DC1D0708A00086622C /* LQTitleButton.h */,
+				39D7C2DD1D0708A00086622C /* LQTitleButton.m */,
+			);
+			name = "LQNavi(首页导航)";
+			path = LQNavi;
+			sourceTree = "<group>";
+		};
+		39D7C2DE1D0708A00086622C /* 番剧 */ = {
+			isa = PBXGroup;
+			children = (
+				39D7C2DF1D0708A00086622C /* Controller */,
+				39D7C2E21D0708A00086622C /* Model */,
+				39D7C2E31D0708A00086622C /* View */,
+			);
+			path = "番剧";
+			sourceTree = "<group>";
+		};
+		39D7C2DF1D0708A00086622C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				39D7C2E01D0708A00086622C /* FanViewController.h */,
+				39D7C2E11D0708A00086622C /* FanViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		39D7C2E21D0708A00086622C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		39D7C2E31D0708A00086622C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		39D7C2E41D0708A00086622C /* 舞蹈 */ = {
+			isa = PBXGroup;
+			children = (
+				39D7C2E51D0708A00086622C /* Controller */,
+				39D7C2E81D0708A00086622C /* Model */,
+				39D7C2E91D0708A00086622C /* View */,
+			);
+			path = "舞蹈";
+			sourceTree = "<group>";
+		};
+		39D7C2E51D0708A00086622C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				39D7C2E61D0708A00086622C /* DanceViewController.h */,
+				39D7C2E71D0708A00086622C /* DanceViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		39D7C2E81D0708A00086622C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		39D7C2E91D0708A00086622C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		39D7C2EA1D0708A00086622C /* 音乐 */ = {
+			isa = PBXGroup;
+			children = (
+				39D7C2EB1D0708A00086622C /* Controller */,
+				39D7C2EE1D0708A00086622C /* Model */,
+				39D7C2EF1D0708A00086622C /* View */,
+			);
+			path = "音乐";
+			sourceTree = "<group>";
+		};
+		39D7C2EB1D0708A00086622C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				39D7C2EC1D0708A00086622C /* MusicViewController.h */,
+				39D7C2ED1D0708A00086622C /* MusicViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		39D7C2EE1D0708A00086622C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		39D7C2EF1D0708A00086622C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		39D7C2F01D0708A00086622C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		39D7C2F11D0708A00086622C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		39D7C2F21D0708A00086622C /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				39D7C2F31D0708A00086622C /* Categorys(分类) */,
+				39D7C2F41D0708A00086622C /* Helpers(工具类) */,
+				39D7C2FD1D0708A00086622C /* LQAppDelegate.h */,
+				39D7C2FE1D0708A00086622C /* LQAppDelegate.m */,
+				39D7C2FF1D0708A00086622C /* Macro(宏定义) */,
+				39D7C3021D0708A00086622C /* MainControl(TabBar&Navi) */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		39D7C2F31D0708A00086622C /* Categorys(分类) */ = {
+			isa = PBXGroup;
+			children = (
+				39D7C3541D070A910086622C /* UIView+Frame.h */,
+				39D7C3551D070A910086622C /* UIView+Frame.m */,
+			);
+			path = "Categorys(分类)";
+			sourceTree = "<group>";
+		};
+		39D7C2F41D0708A00086622C /* Helpers(工具类) */ = {
+			isa = PBXGroup;
+			children = (
+				39D7C2F51D0708A00086622C /* LaunchScreen.h */,
+				39D7C2F61D0708A00086622C /* LaunchScreen.m */,
+				39D7C2F71D0708A00086622C /* StrokeUILabel.h */,
+				39D7C2F81D0708A00086622C /* StrokeUILabel.m */,
+				39D7C2F91D0708A00086622C /* YLQRefreshFooter.h */,
+				39D7C2FA1D0708A00086622C /* YLQRefreshFooter.m */,
+				39D7C2FB1D0708A00086622C /* YLQRefreshHeader.h */,
+				39D7C2FC1D0708A00086622C /* YLQRefreshHeader.m */,
+			);
+			path = "Helpers(工具类)";
+			sourceTree = "<group>";
+		};
+		39D7C2FF1D0708A00086622C /* Macro(宏定义) */ = {
+			isa = PBXGroup;
+			children = (
+				39D7C3011D0708A00086622C /* LQMacro.h */,
+			);
+			path = "Macro(宏定义)";
+			sourceTree = "<group>";
+		};
+		39D7C3021D0708A00086622C /* MainControl(TabBar&Navi) */ = {
+			isa = PBXGroup;
+			children = (
+				39D7C3051D0708A00086622C /* YLQTabBar.h */,
+				39D7C3061D0708A00086622C /* YLQTabBar.m */,
+				39D7C3031D0708A00086622C /* LQTabbarController.h */,
+				39D7C3041D0708A00086622C /* LQTabbarController.m */,
+				39D7C4BB1D0AC75E0086622C /* LQNavigationController.h */,
+				39D7C4BC1D0AC75E0086622C /* LQNavigationController.m */,
+			);
+			path = "MainControl(TabBar&Navi)";
+			sourceTree = "<group>";
+		};
+		39D7C4A01D0AC7180086622C /* Video(视频) */ = {
+			isa = PBXGroup;
+			children = (
+				39D7C4A11D0AC7180086622C /* Controller */,
+				39D7C4A41D0AC7180086622C /* Model */,
+				39D7C4A51D0AC7180086622C /* View */,
+				39D7C4A61D0AC7180086622C /* ZFPlayer(播放器) */,
+			);
+			path = "Video(视频)";
+			sourceTree = "<group>";
+		};
+		39D7C4A11D0AC7180086622C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				39D7C4A21D0AC7180086622C /* PlayerViewController.h */,
+				39D7C4A31D0AC7180086622C /* PlayerViewController.m */,
+				39D7C4C61D0B2C160086622C /* PlayerViewController.storyboard */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		39D7C4A41D0AC7180086622C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		39D7C4A51D0AC7180086622C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		39D7C4A61D0AC7180086622C /* ZFPlayer(播放器) */ = {
+			isa = PBXGroup;
+			children = (
+				39D7C4A71D0AC7180086622C /* ZFBrightnessView.h */,
+				39D7C4A81D0AC7180086622C /* ZFBrightnessView.m */,
+				39D7C4A91D0AC7180086622C /* ZFPlayer.bundle */,
+				39D7C4AA1D0AC7180086622C /* ZFPlayer.h */,
+				39D7C4AB1D0AC7180086622C /* ZFPlayerControlView.h */,
+				39D7C4AC1D0AC7180086622C /* ZFPlayerControlView.m */,
+				39D7C4AD1D0AC7180086622C /* ZFPlayerDownload */,
+				39D7C4B21D0AC7180086622C /* ZFPlayerView.h */,
+				39D7C4B31D0AC7180086622C /* ZFPlayerView.m */,
+			);
+			path = "ZFPlayer(播放器)";
+			sourceTree = "<group>";
+		};
+		39D7C4AD1D0AC7180086622C /* ZFPlayerDownload */ = {
+			isa = PBXGroup;
+			children = (
+				39D7C4AE1D0AC7180086622C /* ZFDownloadManager.h */,
+				39D7C4AF1D0AC7180086622C /* ZFDownloadManager.m */,
+				39D7C4B01D0AC7180086622C /* ZFSessionModel.h */,
+				39D7C4B11D0AC7180086622C /* ZFSessionModel.m */,
+			);
+			path = ZFPlayerDownload;
+			sourceTree = "<group>";
+		};
+		56354FEAE046AFDAE9D60930 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AF1D2C361259D7CFB99A8FCE /* libPods-bilibili视频模块.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FF89799C80A54A9E06C163C0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F89BB7D5C048E5C9497C3A67 /* Pods-bilibili视频模块.debug.xcconfig */,
+				C1BC60BE8F3A363A285AA6D6 /* Pods-bilibili视频模块.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		39D7C1F21D0663DF0086622C /* bilibili视频模块 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 39D7C2151D0663DF0086622C /* Build configuration list for PBXNativeTarget "bilibili视频模块" */;
+			buildPhases = (
+				0B17237F30F4995F46F88C0F /* Check Pods Manifest.lock */,
+				39D7C1EF1D0663DF0086622C /* Sources */,
+				39D7C1F01D0663DF0086622C /* Frameworks */,
+				39D7C1F11D0663DF0086622C /* Resources */,
+				4D8735C8CDBCDF275B700380 /* Embed Pods Frameworks */,
+				B1BC4ADE419C35341396113D /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "bilibili视频模块";
+			productName = "bilibili视频模块";
+			productReference = 39D7C1F31D0663DF0086622C /* bilibili视频模块.app */;
+			productType = "com.apple.product-type.application";
+		};
+		39D7C20B1D0663DF0086622C /* bilibili视频模块UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 39D7C2181D0663DF0086622C /* Build configuration list for PBXNativeTarget "bilibili视频模块UITests" */;
+			buildPhases = (
+				39D7C2081D0663DF0086622C /* Sources */,
+				39D7C2091D0663DF0086622C /* Frameworks */,
+				39D7C20A1D0663DF0086622C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				39D7C20E1D0663DF0086622C /* PBXTargetDependency */,
+			);
+			name = "bilibili视频模块UITests";
+			productName = "bilibili视频模块UITests";
+			productReference = 39D7C20C1D0663DF0086622C /* bilibili视频模块UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		39D7C1EB1D0663DF0086622C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "杨卢青";
+				TargetAttributes = {
+					39D7C1F21D0663DF0086622C = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = SPXQYPSCZ5;
+					};
+					39D7C20B1D0663DF0086622C = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = SPXQYPSCZ5;
+						TestTargetID = 39D7C1F21D0663DF0086622C;
+					};
+				};
+			};
+			buildConfigurationList = 39D7C1EE1D0663DF0086622C /* Build configuration list for PBXProject "bilibili视频模块" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 39D7C1EA1D0663DF0086622C;
+			productRefGroup = 39D7C1F41D0663DF0086622C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				39D7C1F21D0663DF0086622C /* bilibili视频模块 */,
+				39D7C20B1D0663DF0086622C /* bilibili视频模块UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		39D7C1F11D0663DF0086622C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39D7C4B61D0AC7180086622C /* ZFPlayer.bundle in Resources */,
+				39D7C4C71D0B2C160086622C /* PlayerViewController.storyboard in Resources */,
+				39D7C2061D0663DF0086622C /* LaunchScreen.storyboard in Resources */,
+				39D7C2031D0663DF0086622C /* Assets.xcassets in Resources */,
+				39D7C2011D0663DF0086622C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39D7C20A1D0663DF0086622C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0B17237F30F4995F46F88C0F /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4D8735C8CDBCDF275B700380 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-bilibili视频模块/Pods-bilibili视频模块-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B1BC4ADE419C35341396113D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-bilibili视频模块/Pods-bilibili视频模块-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		39D7C1EF1D0663DF0086622C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39D7C4B81D0AC7180086622C /* ZFDownloadManager.m in Sources */,
+				39D7C33A1D0708A00086622C /* FanViewController.m in Sources */,
+				39D7C3561D070A910086622C /* UIView+Frame.m in Sources */,
+				39D7C3421D0708A00086622C /* LQTabbarController.m in Sources */,
+				39D7C3391D0708A00086622C /* LQTitleButton.m in Sources */,
+				39D7C4B41D0AC7180086622C /* PlayerViewController.m in Sources */,
+				39D7C3411D0708A00086622C /* LQAppDelegate.m in Sources */,
+				39D7C33D1D0708A00086622C /* LaunchScreen.m in Sources */,
+				39D7C33B1D0708A00086622C /* DanceViewController.m in Sources */,
+				39D7C4B51D0AC7180086622C /* ZFBrightnessView.m in Sources */,
+				39D7C33E1D0708A00086622C /* StrokeUILabel.m in Sources */,
+				39D7C4BD1D0AC75E0086622C /* LQNavigationController.m in Sources */,
+				39D7C33C1D0708A00086622C /* MusicViewController.m in Sources */,
+				39D7C4BA1D0AC7180086622C /* ZFPlayerView.m in Sources */,
+				39D7C4B91D0AC7180086622C /* ZFSessionModel.m in Sources */,
+				39D7C33F1D0708A00086622C /* YLQRefreshFooter.m in Sources */,
+				39D7C3431D0708A00086622C /* YLQTabBar.m in Sources */,
+				39D7C1F81D0663DF0086622C /* main.m in Sources */,
+				39D7C4B71D0AC7180086622C /* ZFPlayerControlView.m in Sources */,
+				39D7C3381D0708A00086622C /* HomeViewController.m in Sources */,
+				39D7C3401D0708A00086622C /* YLQRefreshHeader.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39D7C2081D0663DF0086622C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39D7C2111D0663DF0086622C /* bilibili____UITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		39D7C20E1D0663DF0086622C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 39D7C1F21D0663DF0086622C /* bilibili视频模块 */;
+			targetProxy = 39D7C20D1D0663DF0086622C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		39D7C1FF1D0663DF0086622C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				39D7C2001D0663DF0086622C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		39D7C2041D0663DF0086622C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				39D7C2051D0663DF0086622C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		39D7C2131D0663DF0086622C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		39D7C2141D0663DF0086622C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		39D7C2161D0663DF0086622C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F89BB7D5C048E5C9497C3A67 /* Pods-bilibili视频模块.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "bilibili视频模块/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ALVIN-YANG.bilibili----";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		39D7C2171D0663DF0086622C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C1BC60BE8F3A363A285AA6D6 /* Pods-bilibili视频模块.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "bilibili视频模块/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ALVIN-YANG.bilibili----";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		39D7C2191D0663DF0086622C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "bilibili视频模块UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ALVIN-YANG.bilibili----UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "bilibili视频模块";
+			};
+			name = Debug;
+		};
+		39D7C21A1D0663DF0086622C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "bilibili视频模块UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ALVIN-YANG.bilibili----UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "bilibili视频模块";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		39D7C1EE1D0663DF0086622C /* Build configuration list for PBXProject "bilibili视频模块" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39D7C2131D0663DF0086622C /* Debug */,
+				39D7C2141D0663DF0086622C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		39D7C2151D0663DF0086622C /* Build configuration list for PBXNativeTarget "bilibili视频模块" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39D7C2161D0663DF0086622C /* Debug */,
+				39D7C2171D0663DF0086622C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		39D7C2181D0663DF0086622C /* Build configuration list for PBXNativeTarget "bilibili视频模块UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39D7C2191D0663DF0086622C /* Debug */,
+				39D7C21A1D0663DF0086622C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 39D7C1EB1D0663DF0086622C /* Project object */;
+}
