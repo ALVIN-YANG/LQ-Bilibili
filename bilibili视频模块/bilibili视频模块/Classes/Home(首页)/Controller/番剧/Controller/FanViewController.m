@@ -13,6 +13,8 @@
 #import <AFNetworking.h>
 #import <MJExtension.h>
 
+
+
 #import "BangumiCollectionHeaderView.h"
 //模型
 #import "BangumiResultModel.h"
@@ -47,10 +49,29 @@
     return _bannerArray;
 }
 
+- (UICollectionView *)collectionView
+{
+    if (!_collectionView) {
+        UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
+        layout.itemSize = CGSizeMake(self.view.frame.size.width, 100);
+        layout.minimumLineSpacing = 10;
+        UICollectionView *collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 64, self.view.frame.size.width, self.view.frame.size.height) collectionViewLayout:layout];
+        collectionView.backgroundColor = [UIColor lightGrayColor];
+        [collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"CollectionCellIdentifier"];
+        [collectionView registerNib:[UINib nibWithNibName:NSStringFromClass([BangumiCollectionHeaderView class]) bundle:nil] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"sectionHeaderIndentifier"];
+        
+        collectionView.delegate = self;
+        collectionView.dataSource = self;
+        _collectionView = collectionView;
+        [self.view addSubview:_collectionView];
+    }
+    return _collectionView;
+}
+
 #pragma mark - life Cycle
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self setupCollectionView];
+    
     [self requestData];
 }
 
@@ -65,9 +86,17 @@
     
     [self.mgr GET:@"http://bangumi.bilibili.com/api/app_index_page_v2?access_key=20819ee9177d90bd7b07ca20b6bd6727&actionKey=appkey&appkey=27eb53fc9058f8c3&build=3360&device=phone&platform=ios&sign=8b2717cac07eae922f8302eeefe7212a&ts=1465654494" parameters:parameters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         
+        [BangumiResultModel mj_setupObjectClassInArray:^NSDictionary *{
+            return @{
+                     @"banners" : @"BangumiBannerItem",
+                     @"ends" : @"BangumiEndsItem"
+                     };
+        }];
+        
         BangumiResultModel *model = [BangumiResultModel mj_objectWithKeyValues:responseObject[@"result"]];
         self.bannerArray = model.banners;
         
+        BangumiBannerItem *item = model.banners[0];
         [self.collectionView reloadData];
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         
@@ -75,24 +104,6 @@
 
 }
 
-- (void)setupCollectionView
-{
-    [self.view addSubview:({
-        UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
-        layout.itemSize = CGSizeMake(self.view.frame.size.width, 100);
-        layout.minimumLineSpacing = 10;
-        UICollectionView *collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 64, self.view.frame.size.width, self.view.frame.size.height) collectionViewLayout:layout];
-        collectionView.backgroundColor = [UIColor lightGrayColor];
-        [collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"CollectionCellIdentifier"];
-        [collectionView registerNib:[UINib nibWithNibName:NSStringFromClass([BangumiCollectionHeaderView class]) bundle:nil] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"sectionHeaderIndentifier"];
-        
-        collectionView.delegate = self;
-        collectionView.dataSource = self;
-        self.collectionView = collectionView;
-        collectionView;
-    })];
-
-}
 
 #pragma mark - UICollectionViewDataSource
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
@@ -126,6 +137,6 @@
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout referenceSizeForHeaderInSection:(NSInteger)section
 {
-    return CGSizeMake(self.view.frame.size.width, 200);
+    return CGSizeMake(self.view.frame.size.width, 500);
 }
 @end
