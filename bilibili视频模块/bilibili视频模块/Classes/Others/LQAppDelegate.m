@@ -7,11 +7,12 @@
 //
 
 #import "LQAppDelegate.h"
-#import "LaunchScreen.h"
 #import "HomeViewController.h"
 
 @interface AppDelegate ()
 
+@property (nonatomic,strong) UIImageView *bgImageView;
+@property (nonatomic,strong) UIImageView *iconImageView;
 @end
 
 @implementation AppDelegate
@@ -21,16 +22,42 @@
     // Override point for customization after application launch.
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    [_window setBackgroundColor:[UIColor whiteColor]];
 
     HomeViewController *homeVC = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateInitialViewController];
+    
     self.window.rootViewController = homeVC;
     [self.window makeKeyAndVisible];
     
-    
-    LaunchScreen *launch = [[LaunchScreen alloc] init];
-    [launch launchAnimation];
+   //启动动画
+    [self launchAnimation];
+  
     return YES;
+}
+
+- (void)launchAnimation{
+    
+    UIWindow *window = [UIApplication sharedApplication].keyWindow;
+    
+    self.bgImageView = [[UIImageView alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.bgImageView.image = [UIImage imageNamed:@"bilibili_splash_iphone_bg"];
+    
+    
+    self.iconImageView = [[UIImageView alloc] initWithFrame:CGRectMake([UIScreen mainScreen].bounds.size.width/2 - 7.5, [UIScreen mainScreen].bounds.size.height/2 - 100, 30, 40)];
+    [self.iconImageView setImage:[UIImage imageNamed:@"bilibili_splash_default"]];
+    
+    [window addSubview:self.bgImageView];
+    [window addSubview:self.iconImageView];
+    
+    [UIView animateWithDuration:1.0f delay:0.0f options:UIViewAnimationOptionBeginFromCurrentState animations:^{
+        self.iconImageView.layer.transform = CATransform3DScale(CATransform3DIdentity, 10.0f, 10.0f, 1.0f);
+    } completion:^(BOOL finished) {
+        [self dismissAll];
+    }];
+}
+
+- (void)dismissAll{
+    [self.bgImageView removeFromSuperview];
+    [self.iconImageView removeFromSuperview];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

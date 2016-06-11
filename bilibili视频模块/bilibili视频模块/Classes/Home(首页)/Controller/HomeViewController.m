@@ -17,6 +17,7 @@
 
 #import "PlayerViewController.h"
 
+
 @interface HomeViewController ()<UIScrollViewDelegate>
 @property (nonatomic, weak)UIScrollView *scrollView;
 @property (nonatomic, weak)UIView *titleView;
@@ -63,9 +64,6 @@
     [self setupViewController];
     //设置下划线
     [self setupSubLine];
-    
-    self.scrollView.delegate = self;
-    
 
 }
 
@@ -78,9 +76,9 @@
     //拼接parameter
     NSMutableDictionary *parameters = [NSMutableDictionary dictionary];
     
-    [self.mgr GET:@"http://bilibili-service.daoapp.io/allrank" parameters:parameters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+    [self.mgr GET:@"http://bangumi.bilibili.com/api/app_index_page_v2?access_key=20819ee9177d90bd7b07ca20b6bd6727&actionKey=appkey&appkey=27eb53fc9058f8c3&build=3360&device=phone&platform=ios&sign=8b2717cac07eae922f8302eeefe7212a&ts=1465654494" parameters:parameters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         
-         [responseObject writeToFile:@"/Users/YLQ/Desktop/bilibili-Demo/Home.plist" atomically:YES];
+         [responseObject writeToFile:@"/Users/YLQ/Desktop/bilibili-Demo/Bangumi(Top).plist" atomically:YES];
        
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         
@@ -95,6 +93,7 @@
     self.scrollView = scroll;
     self.scrollView.contentInset = UIEdgeInsetsMake(0, 0, 0, 0);
     self.scrollView.bounces = NO;
+    self.scrollView.delegate = self;
     [self.view addSubview:scroll];
 }
 
@@ -144,11 +143,9 @@
         vc.view.frame = CGRectMake(i * self.scrollView.frame.size.width, 0, self.scrollView.frame.size.width, self.scrollView.frame.size.height);
         vc.view.backgroundColor = YLQRandomColor;
         [self.scrollView addSubview:vc.view];
-        //        NSLog(@"%ld",i);
     }
     //设置scrollView
     self.scrollView.contentSize = CGSizeMake(count * self.scrollView.frame.size.width, 0);
-    //    NSLog(@"%f", self.scrollView.contentSize.width);
     self.scrollView.pagingEnabled = YES;
     self.scrollView.showsHorizontalScrollIndicator = NO;
     self.scrollView.showsVerticalScrollIndicator = NO;
@@ -167,9 +164,7 @@
     //默认选中第一个
     firstBtn.selected = YES;
     self.preSelectedBtn = firstBtn;
-    
     [firstBtn.titleLabel sizeToFit];
-//    self.subLine.ylq_width = firstBtn.titleLabel.ylq_width + 10;
     self.subLine.ylq_center_X = firstBtn.ylq_center_X;
 }
 
@@ -197,7 +192,6 @@
     [UIView animateWithDuration:0.25 animations:^{
         //下划线
         [titleButton.titleLabel sizeToFit];
-//        self.subLine.ylq_width = titleButton.titleLabel.ylq_width;
         self.subLine.ylq_center_X = titleButton.ylq_center_X;
         //scroll
         CGFloat offsetX = titleButton.tag * self.scrollView.ylq_width;
@@ -212,14 +206,10 @@
 {
     // 按钮索引
     NSInteger index = scrollView.contentOffset.x / scrollView.ylq_width;
-    
     // 找到按钮
     LQTitleButton *titleButton = self.titleView.subviews[index];
-    
-    
     // 点击按钮
     [self dealTitleButtonClick:titleButton];
-    
 }
 
 // 只要滚动 就会调用
@@ -250,14 +240,6 @@
     NSLog(@"%f", rightScale);
     // 只想要 0~1
     rightScale = rightScale - leftI;
-    
-    
-//    CGFloat leftScale = 1 - rightScale;
-    
-    // 形变按钮
-    // scale 0 ~ 1 => 1 ~ 1.3
-//    leftButton.transform = CGAffineTransformMakeScale(leftScale * 0.3 + 1, leftScale * 0.3 + 1);
-//    rigthButton.transform = CGAffineTransformMakeScale(rightScale * 0.3 + 1, rightScale * 0.3 + 1);
     
     // 颜色渐变
     [rigthButton setTitleColor:Color(rightScale *(255-145)+145, rightScale * (114-145)+145, rightScale*(153-141)+141) forState:UIControlStateNormal];
