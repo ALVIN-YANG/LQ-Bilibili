@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="U6b-Vx-4bR" customClass="SubReusableHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="405" height="57"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hd_home_region_icon_33_60x60" translatesAutoresizingMaskIntoConstraints="NO" id="EUw-hL-Sru">
+                    <rect key="frame" x="0.0" y="12" width="33" height="33"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="EUw-hL-Sru" secondAttribute="height" multiplier="1:1" id="mAn-fF-wWX"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="新番连载" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dhG-9L-wc6">
+                    <rect key="frame" x="38" y="19" width="60" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" preservesSuperviewLayoutMargins="YES" text="2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q8u-ej-Kfc">
+                    <rect key="frame" x="358" y="19.5" width="9" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.90196079019999997" green="0.34901961679999999" blue="0.34901961679999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="今日更新" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wit-d1-1kR">
+                    <rect key="frame" x="293" y="19" width="60" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="common_rightArrowShadow_20x20" translatesAutoresizingMaskIntoConstraints="NO" id="h0E-su-Q0O">
+                    <rect key="frame" x="372" y="12" width="33" height="33"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="h0E-su-Q0O" secondAttribute="height" multiplier="1:1" id="ByV-OT-4wY"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="h0E-su-Q0O" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" constant="12" id="2Ww-cT-nf8"/>
+                <constraint firstAttribute="trailing" secondItem="h0E-su-Q0O" secondAttribute="trailing" id="BN0-go-xCd"/>
+                <constraint firstItem="EUw-hL-Sru" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" constant="12" id="HWa-Fx-876"/>
+                <constraint firstItem="h0E-su-Q0O" firstAttribute="leading" secondItem="Q8u-ej-Kfc" secondAttribute="trailing" constant="5" id="LYE-9A-s9T"/>
+                <constraint firstAttribute="bottom" secondItem="h0E-su-Q0O" secondAttribute="bottom" constant="12" id="Rh4-y7-chg"/>
+                <constraint firstItem="dhG-9L-wc6" firstAttribute="centerY" secondItem="EUw-hL-Sru" secondAttribute="centerY" id="bse-To-qIl"/>
+                <constraint firstAttribute="bottom" secondItem="EUw-hL-Sru" secondAttribute="bottom" constant="12" id="c9g-Dl-uZf"/>
+                <constraint firstItem="h0E-su-Q0O" firstAttribute="width" secondItem="h0E-su-Q0O" secondAttribute="height" multiplier="1:1" id="e0r-59-Br1"/>
+                <constraint firstItem="Q8u-ej-Kfc" firstAttribute="centerY" secondItem="h0E-su-Q0O" secondAttribute="centerY" id="e40-6d-cax"/>
+                <constraint firstItem="EUw-hL-Sru" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" id="fF9-fM-e5Z"/>
+                <constraint firstItem="dhG-9L-wc6" firstAttribute="leading" secondItem="EUw-hL-Sru" secondAttribute="trailing" constant="5" id="gl1-v8-04v"/>
+                <constraint firstItem="Q8u-ej-Kfc" firstAttribute="leading" secondItem="wit-d1-1kR" secondAttribute="trailing" constant="5" id="k0F-zY-JIB"/>
+                <constraint firstItem="wit-d1-1kR" firstAttribute="centerY" secondItem="Q8u-ej-Kfc" secondAttribute="centerY" id="o8k-DG-OwQ"/>
+                <constraint firstItem="EUw-hL-Sru" firstAttribute="centerY" secondItem="U6b-Vx-4bR" secondAttribute="centerY" id="tpZ-N6-Scm"/>
+            </constraints>
+            <connections>
+                <outlet property="updateCountLabel" destination="Q8u-ej-Kfc" id="QsU-GF-rGc"/>
+            </connections>
+            <point key="canvasLocation" x="234.5" y="312.5"/>
+        </collectionReusableView>
+    </objects>
+    <resources>
+        <image name="common_rightArrowShadow_20x20" width="20" height="20"/>
+        <image name="hd_home_region_icon_33_60x60" width="60" height="60"/>
+    </resources>
+</document>

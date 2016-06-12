@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="MidCollectionCell">
+            <rect key="frame" x="0.0" y="0.0" width="290" height="219"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="290" height="219"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xQT-TF-Pzn">
+                        <rect key="frame" x="0.0" y="0.0" width="284" height="164.5"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="机甲战士" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xwm-h8-9qw">
+                        <rect key="frame" x="5" y="166" width="280" height="13.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="上午06:30 第11话" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Obl-aF-Ixm">
+                        <rect key="frame" x="5" y="182" width="96.5" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.90196079019999997" green="0.34901961679999999" blue="0.34901961679999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="watching_tag_black_107x34" translatesAutoresizingMaskIntoConstraints="NO" id="CsV-un-N7D">
+                        <rect key="frame" x="148" y="15" width="145" height="37"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hc9-KA-pyb">
+                        <rect key="frame" x="158" y="23" width="33" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="xwm-h8-9qw" secondAttribute="trailing" constant="5" id="1Fd-9h-SZH"/>
+                <constraint firstItem="xwm-h8-9qw" firstAttribute="top" secondItem="xQT-TF-Pzn" secondAttribute="bottom" constant="1.5" id="GUO-Zd-B2v"/>
+                <constraint firstItem="xQT-TF-Pzn" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Hdb-ZO-zdB"/>
+                <constraint firstItem="xQT-TF-Pzn" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="RWN-oU-roo"/>
+                <constraint firstItem="CsV-un-N7D" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" multiplier="0.17" id="Upx-4I-giQ"/>
+                <constraint firstItem="CsV-un-N7D" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" multiplier="0.5" id="aKu-VN-hQH"/>
+                <constraint firstItem="Hc9-KA-pyb" firstAttribute="centerY" secondItem="CsV-un-N7D" secondAttribute="centerY" constant="-3" id="cRm-tZ-KKX"/>
+                <constraint firstItem="Obl-aF-Ixm" firstAttribute="top" secondItem="xwm-h8-9qw" secondAttribute="bottom" constant="3" id="gpU-3e-u40"/>
+                <constraint firstItem="Obl-aF-Ixm" firstAttribute="leading" secondItem="xwm-h8-9qw" secondAttribute="leading" id="lE8-Bs-reB"/>
+                <constraint firstItem="Hc9-KA-pyb" firstAttribute="leading" secondItem="CsV-un-N7D" secondAttribute="leading" constant="10" id="nc5-LM-Ft1"/>
+                <constraint firstItem="xQT-TF-Pzn" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" multiplier="0.75" id="rUG-W3-dFi"/>
+                <constraint firstAttribute="trailing" secondItem="CsV-un-N7D" secondAttribute="trailing" constant="-3" id="vWU-PH-Y5y"/>
+                <constraint firstItem="xwm-h8-9qw" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="w4H-cu-O3b"/>
+                <constraint firstItem="xQT-TF-Pzn" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" multiplier="0.98" id="xrU-Vc-S0w"/>
+                <constraint firstItem="CsV-un-N7D" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="15" id="yJu-ik-JZP"/>
+            </constraints>
+            <size key="customSize" width="290" height="219"/>
+            <connections>
+                <outlet property="brifLabel" destination="xwm-h8-9qw" id="OHb-fG-aKf"/>
+                <outlet property="imageView" destination="xQT-TF-Pzn" id="Oib-Q1-BmW"/>
+                <outlet property="updateTimeLabel" destination="Obl-aF-Ixm" id="pXX-Sc-oN1"/>
+                <outlet property="watchingBackView" destination="CsV-un-N7D" id="fDQ-zp-xfY"/>
+                <outlet property="watchingCountLabel" destination="Hc9-KA-pyb" id="gtN-fT-bLt"/>
+            </connections>
+            <point key="canvasLocation" x="181" y="331.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="watching_tag_black_107x34" width="107" height="34"/>
+    </resources>
+</document>

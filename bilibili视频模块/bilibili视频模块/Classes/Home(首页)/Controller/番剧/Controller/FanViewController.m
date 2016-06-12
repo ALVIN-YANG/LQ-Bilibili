@@ -12,8 +12,7 @@
 #import "PlayerViewController.h"
 #import <AFNetworking.h>
 #import <MJExtension.h>
-
-
+#import "PlayerViewController.h"
 
 #import "BangumiCollectionHeaderView.h"
 //模型
@@ -21,12 +20,16 @@
 #import "BangumiBannerItem.h"
 #import "BangumiLatestUpdateModel.h"
 
-@interface FanViewController ()<UICollectionViewDelegate, UICollectionViewDataSource>
+@interface FanViewController ()<UICollectionViewDelegate, UICollectionViewDataSource, BangumiCollectionHeaderViewDelegate>
 
 //请求管理者
 @property (nonatomic, strong) AFHTTPSessionManager *mgr;
 /**banner Array*/
 @property (nonatomic, copy) NSArray *bannerArray;
+/**LatestUpdate*/
+@property (nonatomic, strong) BangumiLatestUpdateModel *latestUpdateModel;
+/**ends Array*/
+@property (nonatomic, copy) NSArray *endsArray;
 /**collectionView*/
 @property (nonatomic, strong) UICollectionView *collectionView;
 @end
@@ -92,11 +95,15 @@
                      @"ends" : @"BangumiEndsItem"
                      };
         }];
-        
+        [BangumiLatestUpdateModel mj_setupObjectClassInArray:^NSDictionary *{
+            return @{
+                     @"list" : @"BangumiLatestUpdateListItem"
+                     };
+        }];
         BangumiResultModel *model = [BangumiResultModel mj_objectWithKeyValues:responseObject[@"result"]];
         self.bannerArray = model.banners;
-        
-        BangumiBannerItem *item = model.banners[0];
+        self.endsArray = model.ends;
+        self.latestUpdateModel = [BangumiLatestUpdateModel mj_objectWithKeyValues:model.latestUpdate];
         [self.collectionView reloadData];
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         
@@ -128,7 +135,10 @@
     if ([kind isEqualToString:UICollectionElementKindSectionHeader]) {
         BangumiCollectionHeaderView *sectionHeaderView =  [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"sectionHeaderIndentifier" forIndexPath:indexPath];
         
+        sectionHeaderView.delegate = self;
         sectionHeaderView.bannerList = self.bannerArray;
+        sectionHeaderView.latestUpdateModel = self.latestUpdateModel;
+        sectionHeaderView.endsArray = self.endsArray;
         return sectionHeaderView;
     }
     return nil;
@@ -137,6 +147,15 @@
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout referenceSizeForHeaderInSection:(NSInteger)section
 {
-    return CGSizeMake(self.view.frame.size.width, 500);
+    return CGSizeMake(self.view.frame.size.width, 1500);
+}
+
+#pragma mark - BangumiCollectionHeaderViewDelegate
+- (void)didSelectedIndexPath:(NSIndexPath *)indexPath withEpisodes:(NSArray<BangumiEpisodesItem *> *)episodesArray
+{
+    PlayerViewController *playerVC = [[UIStoryboard storyboardWithName:NSStringFromClass([PlayerViewController class]) bundle:nil] instantiateInitialViewController];
+    playerVC.episodesArray = episodesArray;
+    
+    [self.navigationController pushViewController:playerVC animated:YES];
 }
 @end

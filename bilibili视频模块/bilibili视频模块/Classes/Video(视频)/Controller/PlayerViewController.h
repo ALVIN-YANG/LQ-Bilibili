@@ -7,10 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BangumiEpisodesItem.h"
 
 @interface PlayerViewController : UIViewController
 /**
  *  视频URL
  */
 @property (nonatomic, strong) NSURL *videoURL;
+/**
+ *  视频模型列表
+ */
+@property (nonatomic, copy) NSArray<BangumiEpisodesItem *> *episodesArray;
 @end

@@ -41,6 +41,15 @@
 		39D7C4DC1D0C5AF60086622C /* BangumiLatestUpdateModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 39D7C4DB1D0C5AF60086622C /* BangumiLatestUpdateModel.m */; };
 		39D7C4DF1D0C5BAC0086622C /* BangumiLatestUpdateListItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 39D7C4DE1D0C5BAC0086622C /* BangumiLatestUpdateListItem.m */; };
 		39D7C4E21D0C5DEA0086622C /* BangumiEndsItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 39D7C4E11D0C5DEA0086622C /* BangumiEndsItem.m */; };
+		39D7C4E81D0CFC9C0086622C /* LQVerticalButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 39D7C4E71D0CFC9C0086622C /* LQVerticalButton.m */; };
+		39D7C55E1D0D6E5B0086622C /* SubReusableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 39D7C55C1D0D6E5B0086622C /* SubReusableHeaderView.m */; };
+		39D7C55F1D0D6E5B0086622C /* SubReusableHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39D7C55D1D0D6E5B0086622C /* SubReusableHeaderView.xib */; };
+		39D7C5631D0D70D80086622C /* MidCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 39D7C5611D0D70D80086622C /* MidCollectionCell.m */; };
+		39D7C5641D0D70D80086622C /* MidCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39D7C5621D0D70D80086622C /* MidCollectionCell.xib */; };
+		39D7C5671D0DBFC60086622C /* BangumiDetailResultModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 39D7C5661D0DBFC60086622C /* BangumiDetailResultModel.m */; };
+		39D7C56A1D0DC0240086622C /* BangumiEpisodesItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 39D7C5691D0DC0240086622C /* BangumiEpisodesItem.m */; };
+		39D7C56D1D0DCF9B0086622C /* PlayerResultModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 39D7C56C1D0DCF9B0086622C /* PlayerResultModel.m */; };
+		39D7C5701D0DCFBD0086622C /* PlayerURLItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 39D7C56F1D0DCFBD0086622C /* PlayerURLItem.m */; };
 		C708A077733B62D77078E67A /* libPods-bilibili视频模块.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AF1D2C361259D7CFB99A8FCE /* libPods-bilibili视频模块.a */; };
 /* End PBXBuildFile section */
 
@@ -121,6 +130,22 @@
 		39D7C4DE1D0C5BAC0086622C /* BangumiLatestUpdateListItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BangumiLatestUpdateListItem.m; sourceTree = "<group>"; };
 		39D7C4E01D0C5DEA0086622C /* BangumiEndsItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BangumiEndsItem.h; sourceTree = "<group>"; };
 		39D7C4E11D0C5DEA0086622C /* BangumiEndsItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BangumiEndsItem.m; sourceTree = "<group>"; };
+		39D7C4E61D0CFC9C0086622C /* LQVerticalButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQVerticalButton.h; sourceTree = "<group>"; };
+		39D7C4E71D0CFC9C0086622C /* LQVerticalButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQVerticalButton.m; sourceTree = "<group>"; };
+		39D7C55B1D0D6E5B0086622C /* SubReusableHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubReusableHeaderView.h; sourceTree = "<group>"; };
+		39D7C55C1D0D6E5B0086622C /* SubReusableHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubReusableHeaderView.m; sourceTree = "<group>"; };
+		39D7C55D1D0D6E5B0086622C /* SubReusableHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SubReusableHeaderView.xib; sourceTree = "<group>"; };
+		39D7C5601D0D70D80086622C /* MidCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MidCollectionCell.h; sourceTree = "<group>"; };
+		39D7C5611D0D70D80086622C /* MidCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MidCollectionCell.m; sourceTree = "<group>"; };
+		39D7C5621D0D70D80086622C /* MidCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MidCollectionCell.xib; sourceTree = "<group>"; };
+		39D7C5651D0DBFC60086622C /* BangumiDetailResultModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BangumiDetailResultModel.h; sourceTree = "<group>"; };
+		39D7C5661D0DBFC60086622C /* BangumiDetailResultModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BangumiDetailResultModel.m; sourceTree = "<group>"; };
+		39D7C5681D0DC0230086622C /* BangumiEpisodesItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BangumiEpisodesItem.h; sourceTree = "<group>"; };
+		39D7C5691D0DC0240086622C /* BangumiEpisodesItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BangumiEpisodesItem.m; sourceTree = "<group>"; };
+		39D7C56B1D0DCF9B0086622C /* PlayerResultModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerResultModel.h; sourceTree = "<group>"; };
+		39D7C56C1D0DCF9B0086622C /* PlayerResultModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerResultModel.m; sourceTree = "<group>"; };
+		39D7C56E1D0DCFBD0086622C /* PlayerURLItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerURLItem.h; sourceTree = "<group>"; };
+		39D7C56F1D0DCFBD0086622C /* PlayerURLItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerURLItem.m; sourceTree = "<group>"; };
 		AF1D2C361259D7CFB99A8FCE /* libPods-bilibili视频模块.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-bilibili视频模块.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1BC60BE8F3A363A285AA6D6 /* Pods-bilibili视频模块.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bilibili视频模块.release.xcconfig"; path = "Pods/Target Support Files/Pods-bilibili视频模块/Pods-bilibili视频模块.release.xcconfig"; sourceTree = "<group>"; };
 		F89BB7D5C048E5C9497C3A67 /* Pods-bilibili视频模块.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bilibili视频模块.debug.xcconfig"; path = "Pods/Target Support Files/Pods-bilibili视频模块/Pods-bilibili视频模块.debug.xcconfig"; sourceTree = "<group>"; };
@@ -260,8 +285,8 @@
 		39D7C2E21D0708A00086622C /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				39D7C4D21D0C58020086622C /* Bangumi(CollectionView) */,
-				39D7C4D31D0C58020086622C /* Bangumi(Top) */,
+				39D7C4D21D0C58020086622C /* Bangumi(Detail) */,
+				39D7C4D31D0C58020086622C /* Bangumi(Brief) */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -271,9 +296,17 @@
 			children = (
 				39D7C4CF1D0B934E0086622C /* YLQScrollPage.h */,
 				39D7C4D01D0B934E0086622C /* YLQScrollPage.m */,
+				39D7C4E61D0CFC9C0086622C /* LQVerticalButton.h */,
+				39D7C4E71D0CFC9C0086622C /* LQVerticalButton.m */,
 				39D7C4CA1D0B924A0086622C /* BangumiCollectionHeaderView.h */,
 				39D7C4CB1D0B924A0086622C /* BangumiCollectionHeaderView.m */,
 				39D7C4CC1D0B924A0086622C /* BangumiCollectionHeaderView.xib */,
+				39D7C55B1D0D6E5B0086622C /* SubReusableHeaderView.h */,
+				39D7C55C1D0D6E5B0086622C /* SubReusableHeaderView.m */,
+				39D7C55D1D0D6E5B0086622C /* SubReusableHeaderView.xib */,
+				39D7C5601D0D70D80086622C /* MidCollectionCell.h */,
+				39D7C5611D0D70D80086622C /* MidCollectionCell.m */,
+				39D7C5621D0D70D80086622C /* MidCollectionCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -438,6 +471,10 @@
 		39D7C4A41D0AC7180086622C /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				39D7C56B1D0DCF9B0086622C /* PlayerResultModel.h */,
+				39D7C56C1D0DCF9B0086622C /* PlayerResultModel.m */,
+				39D7C56E1D0DCFBD0086622C /* PlayerURLItem.h */,
+				39D7C56F1D0DCFBD0086622C /* PlayerURLItem.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -476,14 +513,19 @@
 			path = ZFPlayerDownload;
 			sourceTree = "<group>";
 		};
-		39D7C4D21D0C58020086622C /* Bangumi(CollectionView) */ = {
+		39D7C4D21D0C58020086622C /* Bangumi(Detail) */ = {
 			isa = PBXGroup;
 			children = (
+				39D7C5651D0DBFC60086622C /* BangumiDetailResultModel.h */,
+				39D7C5661D0DBFC60086622C /* BangumiDetailResultModel.m */,
+				39D7C5681D0DC0230086622C /* BangumiEpisodesItem.h */,
+				39D7C5691D0DC0240086622C /* BangumiEpisodesItem.m */,
 			);
+			name = "Bangumi(Detail)";
 			path = "Bangumi(CollectionView)";
 			sourceTree = "<group>";
 		};
-		39D7C4D31D0C58020086622C /* Bangumi(Top) */ = {
+		39D7C4D31D0C58020086622C /* Bangumi(Brief) */ = {
 			isa = PBXGroup;
 			children = (
 				39D7C4D41D0C58F40086622C /* BangumiResultModel.h */,
@@ -497,6 +539,7 @@
 				39D7C4E01D0C5DEA0086622C /* BangumiEndsItem.h */,
 				39D7C4E11D0C5DEA0086622C /* BangumiEndsItem.m */,
 			);
+			name = "Bangumi(Brief)";
 			path = "Bangumi(Top)";
 			sourceTree = "<group>";
 		};
@@ -606,8 +649,10 @@
 				39D7C4C71D0B2C160086622C /* PlayerViewController.storyboard in Resources */,
 				39D7C2061D0663DF0086622C /* LaunchScreen.storyboard in Resources */,
 				39D7C4CE1D0B924A0086622C /* BangumiCollectionHeaderView.xib in Resources */,
+				39D7C5641D0D70D80086622C /* MidCollectionCell.xib in Resources */,
 				39D7C2031D0663DF0086622C /* Assets.xcassets in Resources */,
 				39D7C2011D0663DF0086622C /* Main.storyboard in Resources */,
+				39D7C55F1D0D6E5B0086622C /* SubReusableHeaderView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -679,26 +724,33 @@
 				39D7C3561D070A910086622C /* UIView+Frame.m in Sources */,
 				39D7C3421D0708A00086622C /* LQTabbarController.m in Sources */,
 				39D7C4DC1D0C5AF60086622C /* BangumiLatestUpdateModel.m in Sources */,
+				39D7C5671D0DBFC60086622C /* BangumiDetailResultModel.m in Sources */,
 				39D7C3391D0708A00086622C /* LQTitleButton.m in Sources */,
 				39D7C4B41D0AC7180086622C /* PlayerViewController.m in Sources */,
 				39D7C4D91D0C5A440086622C /* BangumiBannerItem.m in Sources */,
 				39D7C3411D0708A00086622C /* LQAppDelegate.m in Sources */,
 				39D7C4D11D0B934E0086622C /* YLQScrollPage.m in Sources */,
 				39D7C4D61D0C58F40086622C /* BangumiResultModel.m in Sources */,
+				39D7C4E81D0CFC9C0086622C /* LQVerticalButton.m in Sources */,
+				39D7C55E1D0D6E5B0086622C /* SubReusableHeaderView.m in Sources */,
+				39D7C5631D0D70D80086622C /* MidCollectionCell.m in Sources */,
 				39D7C33B1D0708A00086622C /* DanceViewController.m in Sources */,
 				39D7C4B51D0AC7180086622C /* ZFBrightnessView.m in Sources */,
 				39D7C33E1D0708A00086622C /* StrokeUILabel.m in Sources */,
+				39D7C5701D0DCFBD0086622C /* PlayerURLItem.m in Sources */,
 				39D7C4BD1D0AC75E0086622C /* LQNavigationController.m in Sources */,
 				39D7C33C1D0708A00086622C /* MusicViewController.m in Sources */,
 				39D7C4BA1D0AC7180086622C /* ZFPlayerView.m in Sources */,
 				39D7C4B91D0AC7180086622C /* ZFSessionModel.m in Sources */,
 				39D7C33F1D0708A00086622C /* YLQRefreshFooter.m in Sources */,
 				39D7C3431D0708A00086622C /* YLQTabBar.m in Sources */,
+				39D7C56D1D0DCF9B0086622C /* PlayerResultModel.m in Sources */,
 				39D7C1F81D0663DF0086622C /* main.m in Sources */,
 				39D7C4B71D0AC7180086622C /* ZFPlayerControlView.m in Sources */,
 				39D7C3381D0708A00086622C /* HomeViewController.m in Sources */,
 				39D7C3401D0708A00086622C /* YLQRefreshHeader.m in Sources */,
 				39D7C4CD1D0B924A0086622C /* BangumiCollectionHeaderView.m in Sources */,
+				39D7C56A1D0DC0240086622C /* BangumiEpisodesItem.m in Sources */,
 				39D7C4E21D0C5DEA0086622C /* BangumiEndsItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

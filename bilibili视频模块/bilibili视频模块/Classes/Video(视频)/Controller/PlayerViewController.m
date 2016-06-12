@@ -11,14 +11,49 @@
 #import <MediaPlayer/MediaPlayer.h>
 #import <Masonry.h>
 #import "ZFPlayerView.h"
+#import <AFNetworking.h>
+#import <MJExtension.h>
+#import "PlayerURLItem.h"
+#import "PlayerResultModel.h"
 
 @interface PlayerViewController ()
+//请求管理者
+@property (nonatomic, strong) AFHTTPSessionManager *mgr;
+
 @property (weak, nonatomic) IBOutlet ZFPlayerView *playerView;
 
-
+@property (nonatomic, copy) NSString *avID;
 @end
 
 @implementation PlayerViewController
+#pragma mark - init
+- (void)setEpisodesArray:(NSArray<BangumiEpisodesItem *> *)episodesArray
+{
+    _episodesArray = episodesArray;
+    
+    NSString *request = [NSString stringWithFormat:@"http://www.bilibilijj.com/Api/AvToCid/%@", episodesArray[0].av_id];
+    
+    NSDictionary *elements = [NSJSONSerialization JSONObjectWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:request]] options:NSJSONReadingMutableContainers error:nil];
+
+    [PlayerResultModel mj_setupObjectClassInArray:^NSDictionary *{
+        return @{
+                 @"list" : @"PlayerURLItem"
+                 };
+    }];
+    PlayerResultModel *model = [PlayerResultModel mj_objectWithKeyValues:elements];
+    
+    self.videoURL = [NSURL URLWithString:model.list[0].Mp4Url];
+}
+
+
+- (AFHTTPSessionManager *)mgr
+{
+    if (!_mgr) {
+        _mgr = [AFHTTPSessionManager manager];
+    }
+    return _mgr;
+}
+
 #pragma mark - life Cycle
 - (void)dealloc
 {
@@ -40,12 +75,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.videoURL = [NSURL URLWithString:@"http://baobab.wdjcdn.com/1456653443902B.mp4"];
+    
     
     // Do any additional setup after loading the view.
     
-    self.playerView.videoURL = self.videoURL;
+    
     //（可选设置）可以设置视频的填充模式，内部设置默认（ZFPlayerLayerGravityResizeAspect：等比例填充，直到一个维度到达区域边界）
+    self.playerView.videoURL = self.videoURL;
     self.playerView.playerLayerGravity = ZFPlayerLayerGravityResizeAspect;
     //打开断点下载功能(默认没有这个功能)
     self.playerView.hasDownload = YES;
