@@ -18,4 +18,9 @@
  *  视频模型列表
  */
 @property (nonatomic, copy) NSArray<BangumiEpisodesItem *> *episodesArray;
+
+/**
+ *  AV_ID
+ */
+@property (nonatomic, copy) NSString *avID;
 @end

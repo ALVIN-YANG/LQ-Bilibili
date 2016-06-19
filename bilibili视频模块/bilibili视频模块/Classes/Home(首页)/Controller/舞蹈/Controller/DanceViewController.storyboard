@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="EPV-u0-Y01">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Dance View Controller-->
+        <scene sceneID="kgW-IU-Jvy">
+            <objects>
+                <viewController id="EPV-u0-Y01" customClass="DanceViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="GMb-g6-H1X"/>
+                        <viewControllerLayoutGuide type="bottom" id="TgP-cw-9ag"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vVQ-Jz-tGi">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5Br-ci-paj">
+                                <rect key="frame" x="115" y="180" width="90" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="ro7-YD-1Pt"/>
+                                    <constraint firstAttribute="width" constant="90" id="s7u-NF-14w"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pJm-Dj-dg8">
+                                <rect key="frame" x="85" y="240" width="150" height="40"/>
+                                <color key="backgroundColor" red="0.180392161" green="0.76078432799999995" blue="0.35686275360000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="4E0-wj-iY1"/>
+                                    <constraint firstAttribute="height" constant="40" id="h50-Gp-zbg"/>
+                                </constraints>
+                                <state key="normal" title="播放">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="playerButtonClick:" destination="EPV-u0-Y01" eventType="touchUpInside" id="np3-9Z-0VX"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="输入AV号" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fXd-1W-YC5">
+                                <rect key="frame" x="115" y="135" width="90" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="KKG-iq-yNs"/>
+                                    <constraint firstAttribute="height" constant="30" id="juw-ID-mpl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.086274512110000007" green="0.68235296010000002" blue="0.92156863209999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="fXd-1W-YC5" firstAttribute="centerY" secondItem="vVQ-Jz-tGi" secondAttribute="centerY" constant="-90" id="eHr-UB-3tV"/>
+                            <constraint firstItem="5Br-ci-paj" firstAttribute="centerX" secondItem="vVQ-Jz-tGi" secondAttribute="centerX" id="gr4-qh-U89"/>
+                            <constraint firstItem="5Br-ci-paj" firstAttribute="centerY" secondItem="vVQ-Jz-tGi" secondAttribute="centerY" constant="-40" id="l6C-ps-bdf"/>
+                            <constraint firstItem="pJm-Dj-dg8" firstAttribute="centerX" secondItem="vVQ-Jz-tGi" secondAttribute="centerX" id="lQs-Gg-AKf"/>
+                            <constraint firstItem="pJm-Dj-dg8" firstAttribute="centerY" secondItem="vVQ-Jz-tGi" secondAttribute="centerY" constant="20" id="mdy-ue-8OA"/>
+                            <constraint firstItem="fXd-1W-YC5" firstAttribute="centerX" secondItem="vVQ-Jz-tGi" secondAttribute="centerX" id="q9x-UL-I8C"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="avTextField" destination="5Br-ci-paj" id="nvX-tv-zCE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6wn-LD-X8m" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="89" y="343"/>
+        </scene>
+    </scenes>
+</document>

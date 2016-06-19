@@ -132,7 +132,8 @@
 {
     
     [self addChildViewController:[[FanViewController alloc] init]];
-    [self addChildViewController:[[DanceViewController alloc] init]];
+    
+    [self addChildViewController:[UIStoryboard storyboardWithName:NSStringFromClass([DanceViewController class]) bundle:nil].instantiateInitialViewController];
     [self addChildViewController:[[MusicViewController alloc] init]];
     
     //添加控制器的View到scrollView

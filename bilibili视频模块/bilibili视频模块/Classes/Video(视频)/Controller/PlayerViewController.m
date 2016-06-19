@@ -22,7 +22,7 @@
 
 @property (weak, nonatomic) IBOutlet ZFPlayerView *playerView;
 
-@property (nonatomic, copy) NSString *avID;
+
 @end
 
 @implementation PlayerViewController
@@ -45,6 +45,12 @@
     self.videoURL = [NSURL URLWithString:model.list[0].Mp4Url];
 }
 
+- (void)setAvID:(NSString *)avID
+{
+    _avID = avID;
+
+
+}
 
 - (AFHTTPSessionManager *)mgr
 {

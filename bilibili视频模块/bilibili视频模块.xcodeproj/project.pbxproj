@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		39C452751D16C05C00E9CB46 /* DanceViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39C452741D16C05C00E9CB46 /* DanceViewController.storyboard */; };
 		39D7C1F81D0663DF0086622C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 39D7C1F71D0663DF0086622C /* main.m */; };
 		39D7C2011D0663DF0086622C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39D7C1FF1D0663DF0086622C /* Main.storyboard */; };
 		39D7C2031D0663DF0086622C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39D7C2021D0663DF0086622C /* Assets.xcassets */; };
@@ -64,6 +65,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		39C452741D16C05C00E9CB46 /* DanceViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DanceViewController.storyboard; sourceTree = "<group>"; };
 		39D7C1F31D0663DF0086622C /* bilibili视频模块.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "bilibili视频模块.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		39D7C1F71D0663DF0086622C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		39D7C2001D0663DF0086622C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -326,6 +328,7 @@
 			children = (
 				39D7C2E61D0708A00086622C /* DanceViewController.h */,
 				39D7C2E71D0708A00086622C /* DanceViewController.m */,
+				39C452741D16C05C00E9CB46 /* DanceViewController.storyboard */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -645,6 +648,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39C452751D16C05C00E9CB46 /* DanceViewController.storyboard in Resources */,
 				39D7C4B61D0AC7180086622C /* ZFPlayer.bundle in Resources */,
 				39D7C4C71D0B2C160086622C /* PlayerViewController.storyboard in Resources */,
 				39D7C2061D0663DF0086622C /* LaunchScreen.storyboard in Resources */,
